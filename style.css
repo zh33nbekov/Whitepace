@@ -323,8 +323,7 @@ body:has(.button--burger.active) .header__menu {
 /* Footer */
 .footer {
 	background-color: #043873;
-	min-height: 222px;
-	margin-top: 100px;
+	padding-top: 140px;
 	width: 100%;
 	color: #fff;
 }
@@ -336,6 +335,7 @@ body:has(.button--burger.active) .header__menu {
 	margin: 0 auto;
 	max-width: 608px;
 	text-align: center;
+	padding-bottom: 140px;
 }
 .footer__title {
 	font-size: 72px;
@@ -365,4 +365,101 @@ body:has(.button--burger.active) .header__menu {
 	display: flex;
 	justify-content: center;
 	gap: 40px;
+}
+.footer__center {
+	display: flex;
+	justify-content: space-between;
+}
+.app-info {
+	max-width: 240px;
+}
+.app-info__logo {
+}
+.app-info__description {
+	padding-top: 15px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+	letter-spacing: -2%;
+}
+.footer__nav {
+	width: 100%;
+	max-width: 595px;
+	display: flex;
+	justify-content: space-between;
+}
+.footer__nav-list {
+}
+.footer__nav-title {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 22px;
+	letter-spacing: -2%;
+	padding-bottom: 15px;
+}
+.footer__nav-item {
+	list-style: none;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: -2%;
+}
+.footer__nav-item:nth-of-type(2) {
+	padding: 15px 0;
+}
+.footer__nav-link {
+	color: currentColor;
+	text-decoration: none;
+	transition: color 0.15s ease-in-out;
+}
+.footer__nav-link:hover {
+	color: #ffe492;
+	cursor: pointer;
+}
+.footer__today {
+	max-width: 259px;
+}
+.footer__today-title {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 36px;
+	letter-spacing: -2%;
+}
+.footer__today-description {
+	padding: 23px 0;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: -2%;
+}
+.footer__bottom {
+}
+.footer__bottom-left {
+}
+.footer__bottom-select-wrapper {
+	max-width: 104px;
+	position: relative;
+}
+.footer__bottom-select {
+	padding: 0 6px;
+	background: none;
+	border: none;
+}
+.footer__bottom-language-icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.footer__bottom-arrow-bottom {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.footer__bottom-list {
+}
+.footer__bottom-item {
+}
+.footer__bottom-link {
+}
+.footer__bottom-right {
 }
