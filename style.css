@@ -531,9 +531,7 @@ body:has(.button--burger.active) .header__menu {
 .plan__pricing {
 	width: 100%;
 	max-width: 472px;
-	max-height: 681px;
-	height: 100%;
-	padding: 40px 44px;
+	padding: clamp(20px, 16px + 1.25vw, 40px) clamp(20px, 15.2px + 1.5vw, 44px);
 	border: 1px solid #ffe492;
 	border-radius: 10px;
 	cursor: pointer;
@@ -612,6 +610,20 @@ body:has(.button--burger.active) .header__menu {
 	border: 1px solid #ffe492;
 	border-radius: 8px;
 	margin-top: auto;
+}
+@media (max-width: 1152px) {
+	.plan__pricing {
+		width: 437.33px;
+	}
+}
+@media (max-width: 768px) {
+	.plan__categories {
+		overflow-x: scroll;
+	}
+	.plan__pricing {
+		min-width: clamp(18.063rem, 9.893rem + 40.85vw, 29.5rem);
+		max-height: initial;
+	}
 }
 /* Footer */
 .footer {
